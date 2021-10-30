@@ -20,5 +20,19 @@ namespace SQ10UnitTest.Testing
             int result = math.Factorial(4);
             Assert.AreEqual(24, result);
         }
+        [TestMethod]
+        public void Sum_TwoParams_10()
+        {
+            var math = new MathFunc();
+            int result = math.Sum(5,5);
+            Assert.AreEqual(10, result);
+        }
+        [TestMethod]
+        public void Sum_ThreeParams_10()
+        {
+            var math = new MathFunc();
+            int result = math.Sum(2,3, 5);
+            Assert.AreEqual(10, result);
+        }
     }
 }
